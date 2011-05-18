@@ -1,0 +1,18 @@
+1. Installation instructions
+
+Move this directory into <ezpublish root>/extension/
+Now you can enable the extension at Setup->Extensions.
+The extension needs ezjscore installed and enabled in order to work correctly.
+
+2. Configuration
+
+Set the API and private key fields at Setup->myGengo to the values you got from myGengo. Go to the Dashboard and click 'Rebuild database'.
+To receive asynchonous updates, add a new policy to the 'Anonymous' user group. Grant full access to the 'anonymous' function of the 'mygengo' module.
+Now set the 'Default Callback URL' of you myGengo account to http://<your.host>/<ezpublish/path>/index.php/mygengo/callback.
+
+3. Usage
+On the Dashboard you can now submit new translation requests with the 'New translation' form and manage (cancel, approve, review, view) jobs.
+Users with the 'use' policy can submit translations, the 'admin' policy allows management to the running jobs.
+
+March 2011
+meedidy@googlemail.com
